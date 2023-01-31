@@ -1,0 +1,63 @@
+@import '../abstract/var';
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    .card-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        border-radius: 20px;
+   
+        &::before {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 250%;
+            background: linear-gradient($secondary-color, $primary-color);
+            animation: animate 5s linear infinite;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 4px;
+            background: #1a1818;
+            border-radius: 16px;
+        }
+    .card {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        .split {
+            display: flex;
+            width: 100%;
+            position: relative;
+
+        }
+        h2 {
+            color: #FFF;
+            font-size: 10em;
+            z-index: 10;
+        }
+    }
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+}

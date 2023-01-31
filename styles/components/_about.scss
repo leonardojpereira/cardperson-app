@@ -1,0 +1,18 @@
+@import '../abstract/var';
+
+.about {
+    z-index: 10;
+    position: relative;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+    span {
+        margin-top: 16px;
+        font-size: 16px;
+        i {
+            margin-right: 3px;
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import '../abstract/var';
+
+.apresentation {
+
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    .photo {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        background-color: $secondary-color;
+        border: solid 2px $secondary-color;
+        z-index: 10;
+            img {
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+        #name {
+            font-size: $text-size / 2;
+            margin-top: 8px;
+        }
+        .title {
+            color: $primary-color;
+            font-size: $text-size / 3.2;
+            margin-top: 8px;
+            z-index: 10;
+        }
+    }

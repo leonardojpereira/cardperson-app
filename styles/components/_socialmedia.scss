@@ -1,0 +1,32 @@
+@import '../abstract/var';
+
+#socialmedia {
+  z-index: 10;
+  position: relative;
+  display: flex;
+  width: 100%;
+  a {
+    width: 50%;
+    margin: 22px 3px 0 3px;
+    color: #FFF;
+    background: $secondary-color;
+    padding: 12px 22px; 
+    transition: 0.4s ease;
+    &:hover {
+       opacity: 0.8;;
+    }
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    i {
+        margin-right: 6px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+   
+  }
+}

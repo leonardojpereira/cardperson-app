@@ -1,0 +1,221 @@
+html, body {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #0c192c;
+}
+body .background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+body .background .bubbles {
+  position: relative;
+  display: flex;
+}
+body .background .bubbles span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #1ccefa;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px rgba(79, 195, 220, 0.2666666667), 0 0 50px #1ccefa, 0 0 100px #1ccefa;
+  -webkit-animation: moveup 15s linear infinite;
+          animation: moveup 15s linear infinite;
+  -webkit-animation-duration: calc(125s / var(--i));
+          animation-duration: calc(125s / var(--i));
+}
+body .background .bubbles span:nth-child(even) {
+  background: #FCE22A;
+  box-shadow: 0 0 0 10px #F2921D, 0 0 50px #FCE22A, 0 0 100px #FCE22A;
+}
+
+@-webkit-keyframes moveup {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
+}
+
+@keyframes moveup {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.container .card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+}
+.container .card-container::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 250%;
+  background: linear-gradient(orange, #1ccefa);
+  -webkit-animation: animate 5s linear infinite;
+          animation: animate 5s linear infinite;
+}
+.container .card-container::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: #1a1818;
+  border-radius: 16px;
+}
+.container .card-container .card {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.container .card-container .card .split {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.container .card-container .card h2 {
+  color: #FFF;
+  font-size: 10em;
+  z-index: 10;
+}
+@-webkit-keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.apresentation {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+.apresentation .photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: orange;
+  border: solid 2px orange;
+  z-index: 10;
+}
+.apresentation .photo img {
+  width: 100%;
+  border-radius: 50%;
+}
+.apresentation #name {
+  font-size: 1.5rem;
+  margin-top: 8px;
+}
+.apresentation .title {
+  color: #1ccefa;
+  font-size: 0.9375rem;
+  margin-top: 8px;
+  z-index: 10;
+}
+
+.about {
+  z-index: 10;
+  position: relative;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  margin-top: 22px;
+}
+.about span {
+  margin-top: 16px;
+  font-size: 16px;
+}
+.about span i {
+  margin-right: 3px;
+  font-size: 18px;
+}
+
+#skills-socialmedia {
+  margin: 32px 32px 32px 0;
+  position: relative;
+  z-index: 10;
+}
+#skills-socialmedia h2 {
+  font-size: 1.5rem;
+}
+#skills-socialmedia .tech-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 22px;
+}
+#skills-socialmedia .tech-container .img-container {
+  width: 60px;
+  height: 60px;
+  margin: 0 18px 18px 0;
+}
+#skills-socialmedia .tech-container .img-container img {
+  width: 100%;
+  transition: 0.6s ease;
+}
+#skills-socialmedia .tech-container .img-container img:hover {
+  transform: scale(1.2);
+}
+
+#socialmedia {
+  z-index: 10;
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+#socialmedia a {
+  width: 50%;
+  margin: 22px 3px 0 3px;
+  color: #FFF;
+  background: orange;
+  padding: 12px 22px;
+  transition: 0.4s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+#socialmedia a:hover {
+  opacity: 0.8;
+}
+#socialmedia a i {
+  margin-right: 6px;
+  font-size: 22px;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */

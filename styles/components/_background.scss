@@ -1,0 +1,47 @@
+@import '../abstract/var';
+
+body {
+    min-height: 100vh;
+    background: $third-color;
+    .background {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;   
+        .bubbles {
+            position: relative;
+            display: flex;
+            span {
+                position: relative;
+                width: 30px;
+                height: 30px;
+                background: $primary-color;
+                margin: 0 4px;
+                border-radius: 50%;
+                box-shadow: 0 0 0 10px #4fc3dc44,
+                0 0 50px $primary-color,
+                0 0 100px $primary-color;
+                animation: moveup 15s linear infinite;
+                animation-duration: calc(125s / var(--i));
+                &:nth-child(even) {
+                    background: $bubbles-color;
+                    box-shadow: 0 0 0 10px #F2921D,
+                0 0 50px $bubbles-color,
+                0 0 100px $bubbles-color;
+                }
+            }
+    }
+  }
+}
+
+@keyframes moveup
+{
+   0% 
+   {
+    transform: translateY(100vh) scale(0);
+   }
+   100%
+   {
+    transform: translateY(-10vh) scale(1);
+   }
+}
