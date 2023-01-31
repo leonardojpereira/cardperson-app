@@ -1,3 +1,6 @@
+![cardperson_print](https://user-images.githubusercontent.com/87662269/215819691-de290287-4736-4fbc-a530-ef2708794d58.JPG)
+
+
 <h1 align="center">
  APRESENTATION CARD 📋
 </h1>
