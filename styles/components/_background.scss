@@ -16,13 +16,20 @@ body {
                 width: 30px;
                 height: 30px;
                 background: $primary-color;
-                margin: 0 4px;
                 border-radius: 50%;
                 box-shadow: 0 0 0 10px #4fc3dc44,
                 0 0 50px $primary-color,
                 0 0 100px $primary-color;
                 animation: moveup 15s linear infinite;
                 animation-duration: calc(125s / var(--i));
+                @media screen and (max-width: $bubble-size) {
+                    width: 60px;
+                    height: 15px;
+                }
+                @media screen and (max-width: $small) {
+                    width: 80px;
+                    height: 15px;
+                }
                 &:nth-child(even) {
                     background: $bubbles-color;
                     box-shadow: 0 0 0 10px #F2921D,

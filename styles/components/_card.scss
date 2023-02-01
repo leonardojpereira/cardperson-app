@@ -39,7 +39,9 @@
             display: flex;
             width: 100%;
             position: relative;
-
+            @media screen and (max-width: $small) {
+                display: block;
+            }
         }
         h2 {
             color: #FFF;

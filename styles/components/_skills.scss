@@ -4,6 +4,11 @@
     margin: 32px 32px 32px 0;
     position: relative;
     z-index: 10;
+    @media screen and (max-width: $small) {
+        margin: 0 32px 32px 32px;
+        border-top: 2px solid $primary-color;
+        padding-top: 28px;
+    }
     h2 {
         font-size: $text-size / 2;
     }

@@ -1,6 +1,6 @@
 @import '../abstract/var';
 
-.apresentation {
+#apresentation {
 
     z-index: 10;
     display: flex;
@@ -20,7 +20,7 @@
                 border-radius: 50%;
             }
         }
-        #name {
+        h2 {
             font-size: $text-size / 2;
             margin-top: 8px;
         }
