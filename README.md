@@ -25,7 +25,7 @@ Um cartão pessoal de apresentação, desenvolvido em função de praticar a lin
 ## :link: Deploy
 
 ```
-EM BREVE
+https://leonardojpereira.github.io/cardperson-app/
 ```
 
 ## Imagem / Icones
