@@ -1,5 +1,4 @@
-![cardperson_print](https://user-images.githubusercontent.com/87662269/215819691-de290287-4736-4fbc-a530-ef2708794d58.JPG)
-
+![card_app_print](https://user-images.githubusercontent.com/87662269/216135980-c7a12fa2-e483-4a15-8f76-e6916a81149f.JPG)
 
 <h1 align="center">
  APRESENTATION CARD 📋
